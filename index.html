@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Paytone+One&family=Kiwi+Maru:wght@500&display=swap" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+        <script type="text/javascript" src="./javascript.js"></script>
+        <title>sample</title>
+    </head>
+    <body class="body">
+        <header class="header">
+            <div class="title">infomation</div>
+            <div class="sns-list">
+                <a href="https://twitter.com/so2milkcandy"><div class="sns-icon twitter"><i class="ri-twitter-line"></i></div></a>
+                <a href="https://best-friends.chat/@milk"><div class="sns-icon mastdon"><i class="ri-mastodon-line"></i></div></a>
+                <a href="https://www.pixiv.net/users/11848364"><div class="sns-icon pixiv">P</div></a>
+            </div>
+        </header>
+        <div class="main">
+            <div class="container">
+                <div class="container-item container-item-left">
+                    <div class="start-message">
+                        <div class="top-message">
+                            Welcome<br/>
+                            to the<br/>
+                            homepage!
+                        </div>
+                        <div class="main-message">
+                            このサイトはみるとんの記録を<br/>
+                            残す予定のサイトです。<br/>
+                            <br/>
+                            特に面白いものはありませんが、<br/>
+                            とりあえず何かホームページっぽくするのが目標です。<br/>
+                            <br/>
+                            自己満足サイトなので<br/>
+                            個人感覚で最高なデザインにしていきたいです。<br/>
+                            <br/>
+                            出来上がればいいな…<br/>
+                        </div>
+                        <div class="bottom-message">thank you</div>
+                    </div>
+                </div>
+
+                <div class="container-item container-item-right">
+                    <div class="items">
+                        <div class="item">
+                            <div class="item-img">
+                                <div class="item-title">mairuma</div>
+                                <img src="./img/asmodeus.jpg" alt="アスモデウス">
+                            </div>
+                            <div class="item-content">                                
+                                <div class="item-text">
+                                    推し作品その1。<br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-img">
+                                <div class="item-title">pokemon</div>
+                                <img src="./img/beat.png" alt="ビート">
+                            </div>
+                            <div class="item-content">                                
+                                <div class="item-text">
+                                    推し作品その2。<br/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="item-img">
+                                <div class="item-title">saisai</div>
+                                <img src="./img/saiki.jpg" alt="斉木楠雄">
+                            </div>
+                            <div class="item-content">                                
+                                <div class="item-text">
+                                    推し作品その3。<br/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>        
+            <div class="back-ground-item">
+                <div class="heart"></div>
+            </div>
+        </div>
+        <footer class="footer">
+            
+        </footer>
+    </body>
+</html>
+<style>
+    /* 共通 */
+    a {
+        text-decoration: none;
+    }
+    .hide {
+        display: none !important;
+    }
+
+    .body {
+        background-color: #fec7d7;
+        margin: 0;
+    }
+    .header {
+        height: 3rem;
+        position: fixed;
+        background-color: transparent;
+        width: 100vw;
+        top: 0;
+        z-index: 999;
+    }
+    .main {
+        height: calc(100vh - 16rem);
+        margin-top: 3rem;
+    }
+    .footer {
+        /* height: 3rem;
+        background-color: #fa5246; */
+    }
+
+    /*header */
+    .title{
+        float: left;
+    }
+    .sns-list {
+        display: flex;
+        float: right;
+        margin-right: 1rem;
+    }
+    .sns-icon{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        width: 2rem;
+        height: 2rem;
+        margin: 0.5rem;
+        background-color: #fff;
+        color: #ff8ba7;
+        font-weight: bold;
+        font-size: 1.5rem;
+        border: 0.2rem solid #ff8ba7;
+    }
+    .sns-icon:hover {
+        background-color: #ff8ba7;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    /* main */
+    .container {
+        display: table;
+        width: 100%;
+    }
+    .container-item{
+        display: table-cell;
+        padding: 1rem;
+        width: 50%;
+    }
+    .container-item-left{
+        position: relative;
+    }
+
+    .items {
+        /* aaa */
+    }
+    .item {
+        background: #fff;
+        border-radius: 0.5rem;
+        min-height: 20rem;
+        margin-bottom: 1rem;
+        opacity: 80%;
+        border: 0.2rem solid rgba(0, 0, 0, 0.8);
+    }
+    .item:hover {
+        opacity: 100%;
+        cursor: pointer;
+    }
+    .item-img{
+        position: relative;
+    }
+    .item-img img {
+        width: 100%;
+        height: 15rem;
+        border-radius: 0.5rem 0.5rem 0 0;
+        object-fit: cover;
+    }
+    .item-title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        font-family: 'Paytone One', sans-serif;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 3rem;
+        font-weight: bold;
+        text-align: center;
+    }
+    .item-content {
+        padding: 1rem;
+    }
+    .item-text {
+        font-family: 'Kiwi Maru', serif;
+        color: rgba(0, 0, 0, 0.8);
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: left;
+    }
+
+    .start-message {
+        position: fixed;
+        width: 50%;
+        text-align: center;
+        color: #fff;
+        word-break: break-all;
+    }
+    .top-message{
+        margin: 1rem;
+        font-size: 3rem;
+        font-family: 'Monoton', cursive;
+    }
+    .main-message{
+        font-family: 'Kiwi Maru', serif;
+        font-weight: bold;
+        margin: 1rem;
+        font-size: 1rem;
+    }
+    .bottom-message{
+        margin: 1rem;
+        font-size: 2rem;
+        font-family: 'Monoton', cursive;
+    }
+    @media screen and (max-width:1024px){
+        .container{
+            display: block;
+        }
+        .container-item{
+            display: block;
+            width: auto;
+        }
+        .start-message{
+            position: inherit;
+            width: auto;
+        }
+    }
+
+    .back-ground-item{
+        display: flex;
+        justify-content: center;
+    }
+    .heart{
+        display:inline-block;
+        position: fixed;
+        top: calc(50% - 15rem);
+        left: calc(50% - 15rem);
+        width:30rem;
+        height:30rem;
+        background:#fa5246;
+        animation:10s linear infinite rotation1;
+        z-index: -5;
+    }
+    @keyframes rotation1{
+        0%{ transform:rotate(0);}
+        100%{ transform:rotate(360deg); }
+    }
+
+    /* footer */
+    
+
+
+
+
+
+
+    /* .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;        
+        background-color: #007091;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 1s 0s ease;
+    }
+    .header .title{        
+        font-family: 'Anton', sans-serif;
+        font-size: 5rem;
+        transition: all 1s 0s ease;
+    }
+    .header.hide {
+        height: 3rem;
+    }
+    .header.hide .title {
+        font-size: 2rem;        
+    } */
+
+
+  
+  </style>
